@@ -1,0 +1,44 @@
+Version 2.12
+- Correction pour DC 2.2
+
+Version 2.11
+- Ajout de la personnalisation
+- (Option) Fichier sprite: pour utiliser un fichier de sprite différent
+- (Option) Css : pour modifier le code CSS par défaut
+- (Option) Pixel debut : position du premier sprite dans le fichier
+- (Option) Pixel saut : nombre de pixel entre 2 sprites
+
+Version 2.10
+- Ajout de Viadeo
+- Ajout de Blogonet
+- Nombre total de digg-like : 37
+
+Version 2.9
+- Modification pour rendre le widget visible dans la partie publique (Merci Dsls :) )
+
+Version 2.8
+- Ajout de BlogMemes
+- Ajout de Pioche (Merci Blacknapkins pour les deux :) )
+- Nombre total de digg-like : 35
+
+Version 2.7
+- Ajout du site Twitter (Merci Vivian :) )
+
+Version 2.6
+- Ajout du site Facebook (Merci LLaumgui :) )
+
+Version 2.5.1
+- Correction d'un léger bug d'affichage lorsque le widget n'est pas placé à la fin d'une sidebar.
+
+Version 2.5
+- Remplacement des images par des sprites pour améliorer la vitesse de chargement.
+- Simplification du code.
+- Correction d'un lien.
+
+Version 2.1
+- Correction d'un bug d'affichage sous Opéra.
+
+Version 2.0
+- Ce plugin est désormais sous forme de widget donc plus besoin de modifier votre thème, tout se passe à travers l'interface d'administration. (ATTENTION : ce widget n'apparait que sur les pages de vos billets)
+- Ajout du site Wikio.
+- Possibilité de gérer très précisément les liens que vous voulez ou non voir apparaitre.
