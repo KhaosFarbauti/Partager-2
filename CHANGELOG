@@ -1,3 +1,12 @@
+Version 2.14 - 15-04-2015 - Pierre Van Glabeke
+- localisation
+- ajout content_only, classe et mode hors ligne
+- ajout options dans _define.php
+- compatibilité currywurst/mustek
+- modification lien vers sprite_partager2.png (ne fonctionnait pas quand l'url d'admin est différente de l'url du blog)
+- suppression fin de ligne unix
+- Dotclear 2.7 requis
+
 Version 2.13
 - Ajout licence
 - Correction de sécurité
