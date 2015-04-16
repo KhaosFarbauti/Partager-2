@@ -21,8 +21,9 @@ class partager2Behaviors
 {
         public static function initWidgets($widgets)
         {
-                $widgets->create('partager2',__('Partager 2.0'),array('tplpartager2','partager2Widget'));
-                $widgets->partager2->setting('title',__('Title:'),'');
+                $widgets->create('partager2',__('Partager 2.0'),array('tplpartager2','partager2Widget'),null,__('List of links to Social Bookmarking websites');
+
+                $widgets->partager2->setting('title',__('Title:'),__('Share'));
 
 		$widgets->partager2->setting('additious',__('Additious'),0,'check');
 		$widgets->partager2->setting('blinkbits',__('Blinkbits'),0,'check');
@@ -68,12 +69,11 @@ class partager2Behaviors
 		$widgets->partager2->setting('wists',__('Wists'),0,'check');
 		$widgets->partager2->setting('yahoo',__('Yahoo MyWeb'),1,'check');
 
-		$widgets->partager2->setting('fichier',__('(Option) Fichier sprite:'),'');
-		$widgets->partager2->setting('css',__('(Option) Css:'),'');
-		$widgets->partager2->setting('start',__('(Option) Pixel debut:'),'');
-		$widgets->partager2->setting('step',__('(Option) Pixel saut:'),'');
+		$widgets->partager2->setting('fichier',__('Sprite file (optional):'),'');
+		$widgets->partager2->setting('css',__('CSS (optional):'),'');
+		$widgets->partager2->setting('start',__('Pixel start (optional):'),'');
+		$widgets->partager2->setting('step',__('Pixel size (optional):'),'');
 
-				
         }
 }
 ?>
