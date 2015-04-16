@@ -24,6 +24,9 @@ class tplpartager2
 		global $core;
 		global $_ctx;
 
+		if ($w->offline)
+			return;
+
 		if ($core->url->type != 'post') {
 			return;
 		}
