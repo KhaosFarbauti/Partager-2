@@ -21,7 +21,7 @@ class partager2Behaviors
 {
         public static function initWidgets($widgets)
         {
-                $widgets->create('partager2',__('Partager 2.0'),array('tplpartager2','partager2Widget'),null,__('List of links to Social Bookmarking websites');
+                $widgets->create('partager2',__('Partager 2.0'),array('tplpartager2','partager2Widget'),null,__('List of links to Social Bookmarking websites'));
 
                 $widgets->partager2->setting('title',__('Title:'),__('Share'));
 
