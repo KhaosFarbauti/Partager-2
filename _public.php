@@ -43,10 +43,10 @@ class tplpartager2
 		$pixel_step = $w->step ? $w->step : 21;
 		$css_a = $w->css ? $w->css : "display : block;float : left;height : 16px;width : 16px;margin : 2px;padding : 0;";
 
-		$res =
-		'<div class="partager2">'.
-		($w->title ? '<h2>'.html::escapeHTML($w->title).'</h2>' : '').
+		$res = ($w->title ? $w->renderTitle(html::escapeHTML($w->title)) : '').
+
 		'<div class="partager2_content">'.
+
 		($w->additious ? '<a href="http://www.additious.com/?url='.$lien.'&amp;title='.$titre_billet.'" title="Additious"><img src="'.$base_url.'pf=partager2/img/additious_rouge.gif" alt="Additious" /></a> ' : '').
 		($w->blinkbits ? '<a style="'.$css_a.'background: transparent url('.$base_url.'pf=partager2/img/'.$fichier_sprite.') no-repeat 0 -'.$pixel_start.'px;" href="http://www.blinkbits.com/bookmarklets/save.php?v=1&amp;source_url='.$lien.'&amp;title='.$titre_billet.'&amp;body='.$titre_billet.'" title="Blinkbits"></a> ' : '').
 		($w->blinklist ? '<a style="'.$css_a.'background: transparent url('.$base_url.'pf=partager2/img/'.$fichier_sprite.') no-repeat 0 -'.($pixel_start+1*$pixel_step).'px;" href="http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;Url='.$lien.'&amp;Title='.$titre_billet.'" title="Blinklist"></a> ' : '').
@@ -90,10 +90,11 @@ class tplpartager2
 		($w->wikio_uk ? '<a style="'.$css_a.'background: transparent url('.$base_url.'pf=partager2/img/'.$fichier_sprite.') no-repeat 0 -'.($pixel_start+28*$pixel_step).'px;" href="http://www.wikio.co.uk/vote?url='.$lien.'" title="Wikio"></a> ' : '').
 		($w->wists ? '<a style="'.$css_a.'background: transparent url('.$base_url.'pf=partager2/img/'.$fichier_sprite.') no-repeat 0 -'.($pixel_start+29*$pixel_step).'px;" href="http://wists.com/r.php?c=&amp;r='.$lien.'&amp;title='.$titre_billet.'" title="Wists"></a> ' : '').
 		($w->yahoo ? '<a style="'.$css_a.'background: transparent url('.$base_url.'pf=partager2/img/'.$fichier_sprite.') no-repeat 0 -'.($pixel_start+30*$pixel_step).'px;" href="http://myweb2.search.yahoo.com/myresults/bookmarklet?u='.$lien.'&amp;='.$titre_billet.'" title="Yahoo MyWeb"></a>' : '').
+
 		'</div>'.
-		'<br style="clear : left;" /><br /></div>';
-		
-		return $res;
+		'<br style="clear : left;" /><br />';
+
+		return $w->renderDiv($w->content_only,'partager2 '.$w->class,'',$res);
 	}
 }
 ?>

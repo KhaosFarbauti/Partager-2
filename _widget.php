@@ -74,6 +74,9 @@ class partager2Behaviors
 		$widgets->partager2->setting('start',__('Pixel start (optional):'),'');
 		$widgets->partager2->setting('step',__('Pixel size (optional):'),'');
 
+		$widgets->partager2->setting('content_only',__('Content only'),0,'check');
+		$widgets->partager2->setting('class',__('CSS class:'),'');
+		$widgets->partager2->setting('offline',__('Offline'),0,'check');
         }
 }
 ?>
