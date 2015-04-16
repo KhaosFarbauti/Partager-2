@@ -16,10 +16,17 @@
 if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
-        /* Name */                      "Partager",
-        /* Description*/                "Insertion de liens vers les site de social bookmarking",
-        /* Author */                    "Khaos Farbauti Ibn Oblivion",
-        /* Version */                   '2.13',
-        /* Permissions */               'usage,contentadmin'
+        /* Name */		"Partager",
+        /* Description*/	"Inserting links to social bookmarking sites",
+        /* Author */		"Khaos Farbauti Ibn Oblivion",
+        /* Version */		'2.14',
+	/* Properties */
+	array(
+		'permissions' => 'usage,contentadmin',
+		'type' => 'plugin',
+		'dc_min' => '2.7',
+		'support' => 'http://blog.chaosklub.com/index.php/post/2006/11/03/Un-plugin-de-Social-Bookmarking-pour-DotClear-2',
+		'details' => 'http://plugins.dotaddict.org/dc2/details/partager2'
+	)
 );
 ?>
